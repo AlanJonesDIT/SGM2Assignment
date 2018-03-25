@@ -1,0 +1,121 @@
+html, body {
+	background-color: grey;
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+}
+
+#main {
+	width: 70%;
+	background-color: lightgrey;
+	margin: auto;
+	border: 3px black solid;
+	margin-bottom: 10px;
+}
+
+header div {
+	height: 200px;
+}
+
+header h1 {
+	display: inline-block;
+	border-radius: 5%;
+	border: 2px black solid;
+	color: Black;
+	font-size: 50px;
+	font-family: serif;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 35%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: Black;
+	color: white;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: grey;
+}
+
+.content {
+	display: inline-block;
+	width: 30%;
+	padding-left: 5px;
+}
+
+.paragraph {
+	display: inline-block;
+	width: 100%;
+	margin-left: 10%;
+	padding-right: 5px;
+}
+
+.image {
+	display: inline-block;
+	width: 80%;
+	margin: 3%;
+	border-radius: 5%;
+	border: 2px white solid;
+}
+
+.content2 {
+	display: inline-block;
+	width: 30%;
+}
+
+.paragraph2 {
+	display: inline-block;
+	width: 100%;
+	margin-left: 80%;
+	padding-right: 5px;
+}
+
+.image2 {
+	display: inline-block;
+	width: 80%;
+	margin: 3%;
+	margin-left: 80%;
+	border-radius: 5%;
+	border: 2px white solid;
+}
+
+.image3 {
+	display: inline-block;
+	width: 20%;
+	margin: 3%;
+	margin-left: 55%;
+	border-radius: 5%;
+	border: 2px white solid;
+}
+
+.paragraph3 {
+	display: inline-block;
+	width: 30%;
+	margin-left: 55%;
+	padding-right: 5px;
+}
+
+footer {
+	border-top: 1px black solid;
+	text-align: center;
+	color: white;
+	background-color: black;
+}
+
