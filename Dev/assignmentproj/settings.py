@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 	'assignmentapp',
+	'accounts'
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,7 @@ LANGUAGES = (
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale'),
+	os.path.join(BASE_DIR, 'assignmentapp/locale'),
 )
 
 TIME_ZONE = 'UTC'

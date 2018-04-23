@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 #from .models import Board
+from django.utils.translation import activate
 from django.utils.translation import ugettext_lazy as _
 
 # Create your views here.
