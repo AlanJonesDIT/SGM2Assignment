@@ -1,5 +1,5 @@
 html, body {
-	background-color: grey;
+	background-color: CornflowerBlue;
 	margin: 0px;
 	padding: 0px;
 	font-size: 16px;
@@ -7,26 +7,26 @@ html, body {
 
 #main {
 	width: 70%;
-	background-color: lightgrey;
+	height: auto;
+	background-color: GhostWhite;
 	margin: auto;
 	border: 3px black solid;
 	margin-bottom: 10px;
 }
 
 header div {
+	position: relative;
+    text-align: center;
+    color: white;
 	height: 200px;
 }
 
 header h1 {
-	display: inline-block;
-	border-radius: 5%;
-	border: 2px black solid;
-	color: Black;
-	font-size: 50px;
-	font-family: serif;
 	text-align: center;
+	font-size: 50px;
+	color: Black;
+	font-family: serif;
 	margin-top: 5px;
-	margin-left: 35%;
 }
 
 ul {
@@ -51,65 +51,100 @@ li a {
 }
 
 li a:hover {
-    background-color: grey;
+    background-color: Blue;
 }
 
-.content {
+/* ------------- Content1 ------------- */
+
+.content1 {
 	display: inline-block;
-	width: 30%;
+	width: 50%;
 	padding-left: 5px;
 }
 
-.paragraph {
+.content1 .paragraph {
 	display: inline-block;
 	width: 100%;
-	margin-left: 10%;
+	margin-left: 5%;
 	padding-right: 5px;
 }
 
-.image {
+.content1 img {
 	display: inline-block;
-	width: 80%;
+	width: 100%;
 	margin: 3%;
 	border-radius: 5%;
 	border: 2px white solid;
 }
+
+/* ------------- Content2 ------------- */
 
 .content2 {
 	display: inline-block;
-	width: 30%;
+	position: absolute;
+	width: 40%;
+	padding-left: 10%;
+	margin-top: 1%;
 }
 
-.paragraph2 {
+.content2 .paragraph {
 	display: inline-block;
-	width: 100%;
-	margin-left: 80%;
+	width: 50%;
 	padding-right: 5px;
 }
 
-.image2 {
+.content2 img {
 	display: inline-block;
-	width: 80%;
-	margin: 3%;
-	margin-left: 80%;
+	width: 50%;
 	border-radius: 5%;
 	border: 2px white solid;
 }
 
-.image3 {
+/* ------------- Content3 ------------- */
+
+.content3 {
 	display: inline-block;
-	width: 20%;
-	margin: 3%;
-	margin-left: 55%;
+	position: absolute;
+	width: 40%;
+	padding-left: 10%;
+	margin-top: 1%;
+	top: 70%;
+}
+
+.content3 .paragraph {
+	display: inline-block;
+	width: 50%;
+	padding-right: 5px;
+}
+
+.content3 img {
+	display: inline-block;
+	width: 50%;
 	border-radius: 5%;
 	border: 2px white solid;
 }
 
-.paragraph3 {
+/* ------------- Content4 ------------- */
+
+.content4 {
 	display: inline-block;
-	width: 30%;
-	margin-left: 55%;
-	padding-right: 5px;
+	width: 50%;
+	margin-top: 7%;
+}
+.content4 h3 {
+	margin-left: 10%;
+}
+
+.content4 .paragraph {
+	margin-left: 10px;
+}
+
+.content4 img {
+	float: left;
+	width: 50%;
+	border-radius: 5%;
+	border: 2px white solid;
+	margin: 3%;
 }
 
 footer {

@@ -12,4 +12,6 @@ def home(request):
     #boards = Board.objects.all()
         return render(request, 'home.html')
 		#return render(request, 'home.html', {'boards': boards})
-		
+	
+def cities(request):
+        return render(request, 'cities.html')	
