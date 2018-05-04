@@ -1,0 +1,94 @@
+{% load static %}<!DOCTYPE html>
+{% load i18n %}
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{%trans "Home" %}</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/stylesheet.css">
+	<head>
+	
+<body>
+	<div id="main">
+		<header> 
+			<h1>{%trans "Germany" %}</h1>
+			<br>
+		</header>
+		<nav>
+			<div>
+				<ul>
+					<li><a href="{% url 'home' %}">{%trans "Home" %}</a></li>
+					<li><a href="{% url 'cities' %}">{%trans "Cities" %}</a></li>
+					<li><a href="#attractions">{%trans "Attractions" %}</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="content1">
+			<img src="../static/img/germanfam.jpg" alt="image">
+			<p class="paragraph">
+			1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			</p>
+		</div>
+		
+		<div class="content2">
+			<img src="../static/img/germanfam.jpg" alt="image">
+			<p class="paragraph">
+				This is sample text This is sample text This is sample text This is sample text This is sample text This is sample texts
+			</p> 
+		</div>
+
+		<div class="content3">
+			<img src="../static/img/germanfam.jpg" alt="image">
+			<p class="paragraph">
+				This is sample text This is sample text This is sample text This is sample text This is sample text This is sample texts
+			</p> 
+		</div>
+		
+		<div class="content4">
+			<img src="../static/img/germanfam.jpg" alt="image">
+			<h3>Text Here</h3>
+			<p class="paragraph">
+				This is sample text This is sample text This is sample text This is sample text This is sample text This is sample texts
+			</p> 
+		</div>
+		
+		<div id="language-select">
+		  <table>
+			<tr>
+			  Select Lanaguage:
+				<tr>
+				{% get_language_info_list for LANGUAGES as languages %}
+				{% for language in languages %}
+					<form action="{% url 'set_language' %}" method="post">
+						{% csrf_token %}
+						<input name="language" type="hidden" value="{{ language.code }}" />
+						<input type="submit"
+							   value="{{ language.name|upper }}"
+							   class="btn-link{% if language.code == LANGUAGE_CODE %} current{% endif %}" />
+					</form>
+				{% endfor %}
+			</tr>
+		  
+			<tr>
+				{% get_language_info for LANGUAGE_CODE as lang %}
+				Current Language is: 
+				{{lang.name_local}}
+			</tr>
+		</div>
+	
+		<footer>
+		<nav>
+			<div>
+				<ul>
+					<li><a href="#home">{%trans "Home" %}</a></li>
+					<li><a href="#cities">{%trans "Cities" %}</a></li>
+					<li><a href="#attractions">{%trans "Attractions" %}</a></li>
+				</ul>
+			</div>
+		</nav>
+			<p>&copy; 2018</p>
+		</footer>
+	</div>
+</body>
+</html>
